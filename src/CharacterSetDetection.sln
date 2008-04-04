@@ -1,0 +1,22 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharDet", "CharDet\CharDet.csproj", "{7542525F-5560-4AB5-9FF9-0E854A74B7BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release No Installer|Any CPU = Release No Installer|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7542525F-5560-4AB5-9FF9-0E854A74B7BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7542525F-5560-4AB5-9FF9-0E854A74B7BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7542525F-5560-4AB5-9FF9-0E854A74B7BF}.Release No Installer|Any CPU.ActiveCfg = Release No Installer|Any CPU
+		{7542525F-5560-4AB5-9FF9-0E854A74B7BF}.Release No Installer|Any CPU.Build.0 = Release No Installer|Any CPU
+		{7542525F-5560-4AB5-9FF9-0E854A74B7BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7542525F-5560-4AB5-9FF9-0E854A74B7BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
