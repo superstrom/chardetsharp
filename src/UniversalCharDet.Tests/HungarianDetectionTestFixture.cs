@@ -12,7 +12,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using CharDetSharp.UniversalCharDet;
 
-namespace CharDetSharp.UnitTests
+namespace CharDetSharp.UniversalCharDet.Tests
 {
     [TestClass]
     public class HungarianDetectionTestFixture : BaseDetectionTestFixure
@@ -41,7 +41,7 @@ namespace CharDetSharp.UnitTests
 
         internal void RunHungarianTest(Encoding enc)
         {
-            RunSBCSGroupTest(enc, @"CharDetSharp.UnitTests.Samples.hu.utf-8.txt",
+            RunSBCSGroupTest(enc, @"CharDetSharp.UniversalCharDet.Tests.Samples.hu.utf-8.txt",
                 new Latin2CharSetProber(),
                 new Win1250CharSetProber());
         }

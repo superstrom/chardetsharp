@@ -12,7 +12,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using CharDetSharp.UniversalCharDet;
 
-namespace CharDetSharp.UnitTests
+namespace CharDetSharp.UniversalCharDet.Tests
 {
     [TestClass]
     public class GreekDetectionTestFixture : BaseDetectionTestFixure
@@ -41,7 +41,7 @@ namespace CharDetSharp.UnitTests
 
         internal void RunGreekTest(Encoding enc)
         {
-            RunSBCSGroupTest(enc, @"CharDetSharp.UnitTests.Samples.el.utf-8.txt",
+            RunSBCSGroupTest(enc, @"CharDetSharp.UniversalCharDet.Tests.Samples.el.utf-8.txt",
                 new Latin7CharSetProber(),
                 new Win1253CharSetProber());
         }

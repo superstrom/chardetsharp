@@ -12,7 +12,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using CharDetSharp.UniversalCharDet;
 
-namespace CharDetSharp.UnitTests
+namespace CharDetSharp.UniversalCharDet.Tests
 {
     public class BaseDetectionTestFixure
     {

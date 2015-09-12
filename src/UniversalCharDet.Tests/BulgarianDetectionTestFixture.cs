@@ -12,7 +12,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using CharDetSharp.UniversalCharDet;
 
-namespace CharDetSharp.UnitTests
+namespace CharDetSharp.UniversalCharDet.Tests
 {
     [TestClass]
     public class BulgarianDetectionTestFixture : BaseDetectionTestFixure
@@ -41,7 +41,7 @@ namespace CharDetSharp.UnitTests
 
         internal void RunBulgarianTest(Encoding enc)
         {
-            RunSBCSGroupTest(enc, @"CharDetSharp.UnitTests.Samples.bg.utf-8.txt",
+            RunSBCSGroupTest(enc, @"CharDetSharp.UniversalCharDet.Tests.Samples.bg.utf-8.txt",
                 new Latin5BulgarianCharSetProber(),
                 new Win1251BulgarianCharSetProber());
         }       

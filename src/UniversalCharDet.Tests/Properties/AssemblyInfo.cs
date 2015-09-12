@@ -1,10 +1,10 @@
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("CharDetSharp.UnitTests")]
+[assembly: AssemblyTitle("CharDetSharp.UniversalCharDet.Tests")]
 [assembly: AssemblyDescription("Unit Tests for CharDetSharp")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("CharDetSharp.UnitTests")]
+[assembly: AssemblyProduct("CharDetSharp.UniversalCharDet.Tests")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

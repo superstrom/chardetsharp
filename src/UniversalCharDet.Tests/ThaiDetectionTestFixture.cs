@@ -12,7 +12,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using CharDetSharp.UniversalCharDet;
 
-namespace CharDetSharp.UnitTests
+namespace CharDetSharp.UniversalCharDet.Tests
 {
     [TestClass]
     public class ThaiDetectionTestFixture : BaseDetectionTestFixure
@@ -35,7 +35,7 @@ namespace CharDetSharp.UnitTests
 
         internal void RunThaiTest(Encoding enc)
         {
-            RunSBCSGroupTest(enc, @"CharDetSharp.UnitTests.Samples.th.utf-8.txt",
+            RunSBCSGroupTest(enc, @"CharDetSharp.UniversalCharDet.Tests.Samples.th.utf-8.txt",
                 new TIS620CharSetProber());
         }
     }

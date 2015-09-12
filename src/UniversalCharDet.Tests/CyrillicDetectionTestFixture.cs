@@ -13,7 +13,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using CharDetSharp.UniversalCharDet;
 using System.Reflection;
 
-namespace CharDetSharp.UnitTests
+namespace CharDetSharp.UniversalCharDet.Tests
 {
     [TestClass]
     public class CyrillicDetectionTestFixture : BaseDetectionTestFixure
@@ -66,7 +66,7 @@ namespace CharDetSharp.UnitTests
 
         internal void RunCyrillicTest(Encoding enc)
         {
-            RunSBCSGroupTest(enc, @"CharDetSharp.UnitTests.Samples.ru.utf-8.txt",
+            RunSBCSGroupTest(enc, @"CharDetSharp.UniversalCharDet.Tests.Samples.ru.utf-8.txt",
                 new Koi8RCharSetProber(),
                 new Win1251CharSetProber(),
                 new Latin5CharSetProber(),
