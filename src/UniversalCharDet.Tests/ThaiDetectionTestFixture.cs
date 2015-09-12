@@ -14,6 +14,7 @@ namespace CharDetSharp.UniversalCharDet.Tests
             RunThaiTest(Encoding.GetEncoding("TIS-620"));
         }
 
+        [Ignore]
         [TestMethod]
         public void TestUtf8Detection()
         {

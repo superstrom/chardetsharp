@@ -20,6 +20,7 @@ namespace CharDetSharp.UniversalCharDet.Tests
             RunGreekTest(Encoding.GetEncoding("windows-1253"));
         }
 
+        [Ignore]
         [TestMethod]
         public void TestUtf8Detection()
         {

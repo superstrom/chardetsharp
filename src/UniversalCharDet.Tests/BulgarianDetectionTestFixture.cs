@@ -20,6 +20,7 @@ namespace CharDetSharp.UniversalCharDet.Tests
             RunBulgarianTest(Encoding.GetEncoding("windows-1251"));
         }
 
+        [Ignore]
         [TestMethod]
         public void TestUtf8Detection()
         {

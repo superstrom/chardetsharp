@@ -44,6 +44,7 @@ namespace CharDetSharp.UniversalCharDet.Tests
             RunCyrillicTest(Encoding.GetEncoding("cp866"));
         }
 
+        [Ignore]
         [TestMethod]
         public void TestUtf8Detection()
         {
