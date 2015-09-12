@@ -1,16 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Text;
-
-#if NUNIT
-using NUnit.Framework;
-using TestClassAttribute = NUnit.Framework.TestFixtureAttribute;
-using TestMethodAttribute = NUnit.Framework.TestAttribute;
-#else
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-#endif
-
-using CharDetSharp.UniversalCharDet;
 
 namespace CharDetSharp.UniversalCharDet.Tests
 {
