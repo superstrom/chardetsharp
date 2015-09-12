@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4A3F99C0-CAE5-4F44-94B8-A1C4D6832AFF}</ProjectGuid>
+    <ProjectGuid>{810BECF3-87B8-4AF6-AA5E-34EC9B5C5E41}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>UniversalCharDet.Tests</RootNamespace>
@@ -50,8 +50,28 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="BaseDetectionTestFixure.cs" />
+    <Compile Include="BulgarianDetectionTestFixture.cs" />
+    <Compile Include="CyrillicDetectionTestFixture.cs" />
+    <Compile Include="GreekDetectionTestFixture.cs" />
+    <Compile Include="HungarianDetectionTestFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThaiDetectionTestFixture.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Samples\ar.utf-8.txt" />
+    <EmbeddedResource Include="Samples\bg.utf-8.txt" />
+    <EmbeddedResource Include="Samples\el.utf-8.txt" />
+    <EmbeddedResource Include="Samples\he.utf-8.txt" />
+    <EmbeddedResource Include="Samples\hu.utf-8.txt" />
+    <EmbeddedResource Include="Samples\ru.utf-8.txt" />
+    <EmbeddedResource Include="Samples\th.utf-8.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UniversalCharDet\UniversalCharDet.csproj">
+      <Project>{a460ed9d-d0f9-4857-b798-4cbd16a4e0b1}</Project>
+      <Name>UniversalCharDet</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
