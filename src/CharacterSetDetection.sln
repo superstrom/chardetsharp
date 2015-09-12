@@ -4,19 +4,42 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharDet", "CharDet\CharDet.csproj", "{7542525F-5560-4AB5-9FF9-0E854A74B7BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversalCharDet", "UniversalCharDet\UniversalCharDet.csproj", "{A460ED9D-D0F9-4857-B798-4CBD16A4E0B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversalCharDet.Tests", "UniversalCharDet.Tests\UniversalCharDet.Tests.csproj", "{810BECF3-87B8-4AF6-AA5E-34EC9B5C5E41}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		AutomatedDebug|Any CPU = AutomatedDebug|Any CPU
 		Debug|Any CPU = Debug|Any CPU
 		Release No Installer|Any CPU = Release No Installer|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7542525F-5560-4AB5-9FF9-0E854A74B7BF}.AutomatedDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7542525F-5560-4AB5-9FF9-0E854A74B7BF}.AutomatedDebug|Any CPU.Build.0 = Debug|Any CPU
 		{7542525F-5560-4AB5-9FF9-0E854A74B7BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7542525F-5560-4AB5-9FF9-0E854A74B7BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7542525F-5560-4AB5-9FF9-0E854A74B7BF}.Release No Installer|Any CPU.ActiveCfg = Release No Installer|Any CPU
-		{7542525F-5560-4AB5-9FF9-0E854A74B7BF}.Release No Installer|Any CPU.Build.0 = Release No Installer|Any CPU
+		{7542525F-5560-4AB5-9FF9-0E854A74B7BF}.Release No Installer|Any CPU.ActiveCfg = Release|Any CPU
+		{7542525F-5560-4AB5-9FF9-0E854A74B7BF}.Release No Installer|Any CPU.Build.0 = Release|Any CPU
 		{7542525F-5560-4AB5-9FF9-0E854A74B7BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7542525F-5560-4AB5-9FF9-0E854A74B7BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A460ED9D-D0F9-4857-B798-4CBD16A4E0B1}.AutomatedDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A460ED9D-D0F9-4857-B798-4CBD16A4E0B1}.AutomatedDebug|Any CPU.Build.0 = Debug|Any CPU
+		{A460ED9D-D0F9-4857-B798-4CBD16A4E0B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A460ED9D-D0F9-4857-B798-4CBD16A4E0B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A460ED9D-D0F9-4857-B798-4CBD16A4E0B1}.Release No Installer|Any CPU.ActiveCfg = Release|Any CPU
+		{A460ED9D-D0F9-4857-B798-4CBD16A4E0B1}.Release No Installer|Any CPU.Build.0 = Release|Any CPU
+		{A460ED9D-D0F9-4857-B798-4CBD16A4E0B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A460ED9D-D0F9-4857-B798-4CBD16A4E0B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{810BECF3-87B8-4AF6-AA5E-34EC9B5C5E41}.AutomatedDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{810BECF3-87B8-4AF6-AA5E-34EC9B5C5E41}.AutomatedDebug|Any CPU.Build.0 = Debug|Any CPU
+		{810BECF3-87B8-4AF6-AA5E-34EC9B5C5E41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{810BECF3-87B8-4AF6-AA5E-34EC9B5C5E41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{810BECF3-87B8-4AF6-AA5E-34EC9B5C5E41}.Release No Installer|Any CPU.ActiveCfg = Release|Any CPU
+		{810BECF3-87B8-4AF6-AA5E-34EC9B5C5E41}.Release No Installer|Any CPU.Build.0 = Release|Any CPU
+		{810BECF3-87B8-4AF6-AA5E-34EC9B5C5E41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{810BECF3-87B8-4AF6-AA5E-34EC9B5C5E41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
