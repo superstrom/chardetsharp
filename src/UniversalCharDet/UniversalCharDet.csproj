@@ -65,6 +65,7 @@
     <Compile Include="Model\SequenceModel.Cyrillic.cs" />
     <Compile Include="Model\SequenceModel.Greek.cs" />
     <Compile Include="Model\SequenceModel.Hebrew.cs" />
+    <Compile Include="Model\SequenceModel.Hungarian.cs" />
     <Compile Include="Model\SequenceModel.Thai.cs" />
     <Compile Include="HebrewCharSetProber.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -72,12 +73,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="SingleByteCharSetProber.Greek.cs" />
     <Compile Include="ICharSetProber.cs" />
-    <Compile Include="SBCSGroupProber.cs" />
-    <Compile Include="SingleByteCharSetProber.Cyrillic.cs" />
     <Compile Include="ProbingState.cs" />
+    <Compile Include="SBCSGroupProber.cs" />
+    <Compile Include="SingleByteCharSetProber.Bulgarian.cs" />
+    <Compile Include="SingleByteCharSetProber.Cyrillic.cs" />
+    <Compile Include="SingleByteCharSetProber.Greek.cs" />
     <Compile Include="SingleByteCharSetProber.cs" />
+    <Compile Include="SingleByteCharSetProber.Hungarian.cs" />
+    <Compile Include="SingleByteCharSetProber.Thai.cs" />
     <Compile Include="SwitchableEncodingStreamReader.cs" />
   </ItemGroup>
   <ItemGroup>
