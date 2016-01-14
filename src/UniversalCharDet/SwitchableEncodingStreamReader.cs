@@ -35,6 +35,7 @@ namespace CharDetSharp.UniversalCharDet
         /// </exception>
         public SwitchableEncodingStreamReader(Stream stream) : this(new StreamReader(stream)) { }
 
+#if !COREFX
         /// <summary>
         ///   Initializes a new instance of the SwitchableEncodingStreamReader class for the specified file name.
         /// </summary>
@@ -56,6 +57,7 @@ namespace CharDetSharp.UniversalCharDet
         ///   or volume label.
         /// </exception>
         public SwitchableEncodingStreamReader(string path) : this(new StreamReader(path)) { }
+#endif
 
         /// <summary>
         ///   Initializes a new instance of the SwitchableEncodingStreamReader class for the specified
@@ -85,6 +87,7 @@ namespace CharDetSharp.UniversalCharDet
         /// </exception>
         public SwitchableEncodingStreamReader(Stream stream, Encoding encoding) : this(new StreamReader(stream, encoding)) { }
         
+#if !COREFX
         /// <summary>
         ///   Initializes a new instance of the SwitchableEncodingStreamReader class for the specified
         ///   file name, with the specified byte order mark detection option.
@@ -108,7 +111,9 @@ namespace CharDetSharp.UniversalCharDet
         ///   or volume label.
         /// </exception>
         public SwitchableEncodingStreamReader(string path, bool detectEncodingFromByteOrderMarks) : this(new StreamReader(path, detectEncodingFromByteOrderMarks)) { }
+#endif
         
+#if !COREFX
         /// <summary>
         ///   Initializes a new instance of the SwitchableEncodingStreamReader class for the specified
         ///   file name, with the specified character encoding.
@@ -132,6 +137,7 @@ namespace CharDetSharp.UniversalCharDet
         ///   or volume label.
         /// </exception>
         public SwitchableEncodingStreamReader(string path, Encoding encoding) : this(new StreamReader(path, encoding)) { }
+#endif
 
         /// <summary>
         ///   Initializes a new instance of the SwitchableEncodingStreamReader class for the specified
@@ -149,6 +155,7 @@ namespace CharDetSharp.UniversalCharDet
         /// </exception>
         public SwitchableEncodingStreamReader(Stream stream, Encoding encoding, bool detectEncodingFromByteOrderMarks) : this(new StreamReader(stream, encoding, detectEncodingFromByteOrderMarks)) { }
         
+#if !COREFX
         /// <summary>
         ///   Initializes a new instance of the SwitchableEncodingStreamReader class for the specified
         ///   file name, with the specified character encoding and byte order mark detection
@@ -174,6 +181,7 @@ namespace CharDetSharp.UniversalCharDet
         ///   or volume label.
         /// </exception>
         public SwitchableEncodingStreamReader(string path, Encoding encoding, bool detectEncodingFromByteOrderMarks) : this(new StreamReader(path, encoding, detectEncodingFromByteOrderMarks)) { }
+#endif
 
         /// <summary>
         ///   Initializes a new instance of the SwitchableEncodingStreamReader class for the specified
@@ -195,6 +203,7 @@ namespace CharDetSharp.UniversalCharDet
         /// </exception>
         public SwitchableEncodingStreamReader(Stream stream, Encoding encoding, bool detectEncodingFromByteOrderMarks, int bufferSize) : this(new StreamReader(stream, encoding, detectEncodingFromByteOrderMarks, bufferSize)) { }
 
+#if !COREFX
         /// <summary>
         ///   Initializes a new instance of the SwitchableEncodingStreamReader class for the specified
         ///   file name, with the specified character encoding, byte order mark detection
@@ -224,6 +233,7 @@ namespace CharDetSharp.UniversalCharDet
         ///   buffersize is less than or equal to zero.
         /// </exception>
         public SwitchableEncodingStreamReader(string path, Encoding encoding, bool detectEncodingFromByteOrderMarks, int bufferSize) : this(new StreamReader(path, encoding, detectEncodingFromByteOrderMarks, bufferSize)) { }
+#endif
 
         /// <summary>
         ///   Returns the underlying stream.
@@ -257,7 +267,9 @@ namespace CharDetSharp.UniversalCharDet
         ///   Closes the System.IO.StreamReader object and the underlying stream, and releases
         ///   any system resources associated with the reader.
         /// </summary>
+#if !COREFX
         public override void Close() { reader.Close(); }
+#endif
         
         /// <summary>
         ///   Allows a System.IO.StreamReader object to discard its current data.

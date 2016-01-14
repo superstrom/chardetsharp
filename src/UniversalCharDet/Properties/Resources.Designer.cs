@@ -39,7 +39,7 @@ namespace CharDetSharp.UniversalCharDet.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CharDetSharp.UniversalCharDet.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager(typeof(CharDetSharp.UniversalCharDet.Properties.Resources));
                     resourceMan = temp;
                 }
                 return resourceMan;
