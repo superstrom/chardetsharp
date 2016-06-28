@@ -176,7 +176,6 @@ namespace CharDetSharp.UniversalCharDet
         private ICharSetProber logical;
         private ICharSetProber visual;
 
-
         public string CharSetName
         {
             get { return this.bestGuess.CharSetName; }
@@ -214,12 +213,10 @@ namespace CharDetSharp.UniversalCharDet
             }
         }
 
-        public HebrewCharSetProber() 
-		{
+        public HebrewCharSetProber()
+        {
             this.state = ProbingState.Detecting;
-		
-		}
-
+        }
 
         internal static bool isFinal(byte c)
         {
@@ -258,9 +255,9 @@ namespace CharDetSharp.UniversalCharDet
 
             // if we are not active, we needn't do any work.
             if (!this.isActive) return this.state;
-			
-			logical.HandleData(buffer, start, length);
-			visual.HandleData(buffer, start, length);
+
+            logical.HandleData(buffer, start, length);
+            visual.HandleData(buffer, start, length);
 
             // Both model probers say it's not them. No reason to continue.
             if (logical.State == ProbingState.NotMe && visual.State == ProbingState.NotMe)
@@ -268,8 +265,6 @@ namespace CharDetSharp.UniversalCharDet
                 return (this.state = ProbingState.NotMe);
             }
 
-
-			
             return this.state;
         }
 
