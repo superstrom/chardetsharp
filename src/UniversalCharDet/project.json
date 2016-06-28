@@ -1,26 +1,24 @@
 {
-  "version": "1.0.0-*",
-  "resource": [ "Properties/*.resx" ],
-  "namedResource": { "CharDetSharp.UniversalCharDet.Properties.Resources": "Properties/Resources.resx" },
-  "compilationOptions": {
+  "version": "1.0.0.0",
+  "buildOptions": {
     "strongName": true,
-    "keyFile": "../CharDetSharp.snk"
+    "keyFile": "../CharDetSharp.snk",
+    "resource": [ "Properties/*.resx" ],
+    "namedResource": { "CharDetSharp.UniversalCharDet.Properties.Resources": "Properties/Resources.resx" }
   },
+  "dependencies": {},
   "frameworks": {
-    "dotnet": {
-      "compilationOptions": {
-        "define": [ "COREFX" ]
-      },
+    "net40": {},
+    "net46": {},
+    "netcoreapp1.0": {
+      "buildOptions": { "define": [ "COREFX" ] },
       "dependencies": {
-        "Microsoft.CSharp": "4.0.0",
-        "System.Collections.NonGeneric": "4.0.0",
-        "System.Diagnostics.Tools": "4.0.0",
-        "System.Resources.ResourceManager": "4.0.0",
-        "System.Runtime": "4.0.20.0",
-        "System.Runtime.Extensions": "4.0.0"
-      }
-    },
-    "net40": { },
-    "net45": { }
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0"
+        }
+      },
+      "imports": "dnxcore50"
+    }
   }
 }
