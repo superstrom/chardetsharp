@@ -21,6 +21,13 @@ namespace CharDetSharp.UniversalCharDet.Tests
             RunThaiTest(Encoding.UTF8);
         }
 
+        [Ignore]
+        [TestMethod]
+        public void TestUnicodeDetection()
+        {
+            RunThaiTest(Encoding.Unicode);
+        }
+
         internal void RunThaiTest(Encoding enc)
         {
             RunSBCSGroupTest(enc, @"CharDetSharp.UniversalCharDet.Tests.Samples.th.utf-8.txt",

@@ -27,6 +27,13 @@ namespace CharDetSharp.UniversalCharDet.Tests
             RunBulgarianTest(Encoding.UTF8);
         }
 
+        [Ignore]
+        [TestMethod]
+        public void TestUnicodeDetection()
+        {
+            RunBulgarianTest(Encoding.Unicode);
+        }
+
         internal void RunBulgarianTest(Encoding enc)
         {
             RunSBCSGroupTest(enc, @"CharDetSharp.UniversalCharDet.Tests.Samples.bg.utf-8.txt",

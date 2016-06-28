@@ -7,7 +7,7 @@ namespace CharDetSharp.UniversalCharDet.Tests
     public class CyrillicDetectionTestFixture : BaseDetectionTestFixure
     {
         public TestContext TestContext { get; set; }
-        
+
         [TestMethod]
         public void TestKoi8RDetection()
         {
@@ -49,6 +49,13 @@ namespace CharDetSharp.UniversalCharDet.Tests
         public void TestUtf8Detection()
         {
             RunCyrillicTest(Encoding.UTF8);
+        }
+
+        [Ignore]
+        [TestMethod]
+        public void TestUnicodeDetection()
+        {
+            RunCyrillicTest(Encoding.Unicode);
         }
 
         internal void RunCyrillicTest(Encoding enc)

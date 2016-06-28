@@ -27,6 +27,13 @@ namespace CharDetSharp.UniversalCharDet.Tests
             RunHungarianTest(Encoding.UTF8);
         }
 
+        [Ignore]
+        [TestMethod]
+        public void TestUnicodeDetection()
+        {
+            RunHungarianTest(Encoding.Unicode);
+        }
+
         internal void RunHungarianTest(Encoding enc)
         {
             RunSBCSGroupTest(enc, @"CharDetSharp.UniversalCharDet.Tests.Samples.hu.utf-8.txt",

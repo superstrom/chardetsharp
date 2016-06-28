@@ -27,6 +27,13 @@ namespace CharDetSharp.UniversalCharDet.Tests
             RunGreekTest(Encoding.UTF8);
         }
 
+        [Ignore]
+        [TestMethod]
+        public void TestUnicodeDetection()
+        {
+            RunGreekTest(Encoding.Unicode);
+        }
+
         internal void RunGreekTest(Encoding enc)
         {
             RunSBCSGroupTest(enc, @"CharDetSharp.UniversalCharDet.Tests.Samples.el.utf-8.txt",
