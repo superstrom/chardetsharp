@@ -64,14 +64,14 @@ namespace CharDetSharp.UniversalCharDet.Model
 
         private byte[] charToOrderMap;        // [256] table use to find a char's order
         private byte[] precedenceMatrix;      // [SAMPLE_SIZE][SAMPLE_SIZE]; table to find a 2-char sequence's frequency
-        private float typicalPositiveRatio;  // = freqSeqs / totalSeqs 
+        private float typicalPositiveRatio;   // = freqSeqs / totalSeqs 
         private bool keepEnglishLetter;       // says if this script contains English characters (not implemented)
         private Encoding charSet;
 
-        public byte[] CharToOrderMap { get { return this.charToOrderMap;}}
-        public byte[] PrecedenceMatrix  { get { return this.precedenceMatrix;}}
-        public float TypicalPositiveRatio { get { return this.typicalPositiveRatio;}} 
-        public bool KeepEnglishLetter { get { return this.keepEnglishLetter;}}     
-        public Encoding CharSet { get { return this.charSet;}}
+        public byte[] CharToOrderMap { get { return this.charToOrderMap; } }
+        public byte[] PrecedenceMatrix { get { return this.precedenceMatrix; } }
+        public float TypicalPositiveRatio { get { return this.typicalPositiveRatio; } }
+        public bool KeepEnglishLetter { get { return this.keepEnglishLetter; } }
+        public Encoding CharSet { get { return this.charSet; } }
     }
 }
